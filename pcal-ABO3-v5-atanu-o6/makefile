@@ -29,4 +29,7 @@ writefiles_list.o:writefiles_list.f90
 polarizationCal_md_v2.o:polarizationCal_md_v2.f90
 	$(FC) ${FCFLAG} -c polarizationCal_md_v2.f90 $(LIB) 
 clean:
-	rm $(objects) *.mod  exeO6O12.x
+	rm $(objects) *.mod  
+	
+cleanall:
+	rm exeO6O12.x $(objects) *.mod
