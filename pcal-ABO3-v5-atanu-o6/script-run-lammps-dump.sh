@@ -2,7 +2,7 @@
 
 echo "*****Please change the path of the executable*****"
 
-for i in $(seq 1 1); do
+for i in $(seq 1 5); do
 SECONDS=0
 # do some work
 duration=$SECONDS
