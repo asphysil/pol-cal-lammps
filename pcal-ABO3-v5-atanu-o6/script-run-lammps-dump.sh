@@ -14,4 +14,6 @@ echo ${nl}
 ${nl}
 EOF
 fi
+mv Local_P.dat Local_P.dat-${i}
+mv Total_P.dat Total_P.dat-${i}
 done
