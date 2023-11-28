@@ -3,6 +3,9 @@
 echo "*****Please change the path of the executable*****"
 
 for i in $(seq 1 1); do
+SECONDS=0
+# do some work
+duration=$SECONDS
 rm dump.xyz
 if test -f ../dump.xyz-${i}
 then
@@ -16,4 +19,5 @@ EOF
 fi
 mv Local_P.dat Local_P.dat-${i}
 mv Total_P.dat Total_P.dat-${i}
+echo "Iteration= ${i} and Time = $(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
 done
